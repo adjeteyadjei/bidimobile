@@ -1,0 +1,43 @@
+<div class="modal">
+  <ion-header-bar>
+    <h1 class="title">Location Details</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="close()">Close</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="card">
+      <div class="item item-divider">
+        Basic Details
+      </div>
+      <div class="item item-text-wrap">
+        <p align="center"><img src="{{location.Logo}}"></p>
+        <p><strong>Location:</strong> {{location.Name}}</p>
+        <p><strong>Certificate:</strong> <span class="stamp info">{{location.CertificateNumber}}</span></p>
+        <p><strong>Client:</strong> {{location.Client}}</p>
+        <p><strong>Region:</strong> {{location.Region}}</p>
+        <p><strong>District:</strong> {{location.District}}</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="item item-divider">
+        Cleaning Information
+      </div>
+      <div class="item item-text-wrap">
+        <p><strong>Last Cleaning Date:</strong> {{location.LastCleaningDate | date : 'fullDate'}}</p>
+        <p><strong>Next Cleaning Date:</strong> {{location.NextCleaningDate | date : 'fullDate'}}</p>
+        <p><strong>Cleaning Count Down:</strong> {{countDown(location.NextCleaningDate) | number : 0}} days <span class="stamp danger" ng-if="expired">Expired</span></p>
+      </div>
+    </div>
+    <div class="card down-margin">
+      <div class="item item-divider">
+        Certificate
+        <a class="button button-small button-icon icon ion-android-download" ng-click="pullCertificate(location.Id)" style="float:right"></a>        
+      </div>
+      <div class="item item-image">
+        <p ng-if="fetchingCert"><strong>Fetching Certificate</strong> </p>
+        <img src="{{location.Certificate}}">
+      </div>
+    </div>
+  </ion-content>
+</div>

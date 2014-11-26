@@ -1,0 +1,40 @@
+/* Your app's CSS, go crazy, make it your own */
+
+.ionic-logo {
+  display: block;
+  margin: 15px auto;
+  width: 96px;
+  height: 96px;
+}
+.msg-box{
+  text-align: center;
+}
+
+.error{
+	color: maroon;
+}
+
+.down-margin{
+  margin-bottom: 80px;
+}
+
+.stamp{	
+	display: inline;
+	padding: .2em .6em .3em;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 1;
+	color: #fff;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: baseline;
+	border-radius: .25em;
+}
+
+.info{
+	background-color: #428bca;
+}
+
+.danger{
+	background-color: #d9534f;
+}
