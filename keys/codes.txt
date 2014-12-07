@@ -1,0 +1,2 @@
+key: iphone_dev.p12
+password: adjetey7
