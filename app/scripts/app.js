@@ -7,8 +7,8 @@
 // 'starter.services' is found in services.js
 // 'starter.controllers' is found in controllers.js
 angular.module('BidiMobile', ['ionic', 'config', 'BidiMobile.controllers'])
-//.value('API', 'http://www.bidicleaning.net//api/mobile')
-.value('API', '/api')
+.value('API', 'http://www.bidicleaning.net/api/mobile')
+//.value('API', '/api')
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
