@@ -75,6 +75,7 @@ angular.module('BidiMobile.controllers', [])
       }, function(error) {
         if (error.status == 500) {
           //Internal Server Error.
+          console.log(error);
           $scope.message = "Service unreachable. Please check your internet connection.";
         } else if (error.status == 401) {
           //Unauthorized Request

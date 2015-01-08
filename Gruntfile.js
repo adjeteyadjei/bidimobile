@@ -95,7 +95,7 @@ module.exports = function (grunt) {
         proxies: [{
           context: '/api',
           //host: 'localhost',
-          host: 'bidicleaning.net',
+          host: 'www.bidicleaning.net',
           port: 60785,
           //port: false,
           changeOrigin: true,

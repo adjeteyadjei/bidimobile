@@ -1,2 +1,6 @@
 key: iphone_dev.p12
 password: adjetey7
+
+
+alias: store_key
+password: adjetey@key
